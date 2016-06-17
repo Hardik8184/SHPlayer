@@ -1,0 +1,40 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="@bool/fitsSystemWindows">
+
+    <!-- The toolbar and main content view -->
+    <include
+        android:id="@+id/include_sliding_panel"
+        layout="@layout/activity_main_slidingpanel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- The navigation drawer -->
+
+    <in.risysnetworks.shplayer.utils.ScrimInsetsFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrimInsetsFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:elevation="10dp"
+        app:insetForeground="@color/inset">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <!-- Your drawer content -->
+
+            <include layout="@layout/drawer" />
+
+        </LinearLayout>
+
+    </in.risysnetworks.shplayer.utils.ScrimInsetsFrameLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView-->
+    <!--android:id="@+id/recycler_allSongs"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="?attr/actionBarSize"-->
+    <!--app:fastScrollAutoHide="false"-->
+    <!--app:fastScrollAutoHideDelay="2000"-->
+    <!--app:fastScrollPopupBgColor="?attr/colorPrimary"-->
+    <!--app:fastScrollPopupTextColor="@android:color/white"-->
+    <!--app:fastScrollThumbColor="?attr/colorPrimary" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="5dp" />
+
+    <in.risysnetworks.shplayer.fastscroll.RecyclerViewFastScroller
+        android:id="@+id/fastscroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="5dp"
+        android:padding="2dp" />
+
+
+</RelativeLayout>

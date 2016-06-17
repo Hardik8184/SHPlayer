@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <in.risysnetworks.shplayer.observablelib.ObservableScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_white_1000"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parallax_image_height_ancor"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_default_album_art" />
+
+                <View
+                    android:id="@+id/anchor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/parallax_image_height"
+                    android:minHeight="@dimen/parallax_image_height" />
+
+                <!--<include-->
+                <!--layout="@layout/include_albumdetailsongslist"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--/>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/anchor"
+                    android:background="@android:color/transparent">
+
+                    <RelativeLayout
+                        android:id="@+id/scrol_slidecontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="36dp"
+                        android:background="@color/md_white_1000">
+
+                        <TextView
+                            android:id="@+id/tv_albumname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="76dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:singleLine="true"
+                            android:text="Love Story 2015"
+                            android:textColor="@color/md_text"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:id="@+id/txt_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_albumname"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="horizontal">
+
+                            <in.risysnetworks.shplayer.utils.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="6dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/illo_default_artistradio_portrait"
+                                app:border_color="@android:color/transparent"
+                                app:border_width="0dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp">
+
+                                <TextView
+                                    android:id="@+id/tv_title_frst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="16dp"
+                                    android:singleLine="true"
+                                    android:text="Love Story 2015"
+                                    android:textColor="@color/md_secondary_text_icons"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_title_sec"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_title_frst"
+                                    android:layout_marginRight="76dp"
+                                    android:layout_marginTop="1dp"
+                                    android:singleLine="true"
+                                    android:text="Love Story 2015"
+                                    android:textColor="@color/md_secondary_text_icons"
+                                    android:textSize="13sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <in.risysnetworks.shplayer.utils.ExpandableHeightListView
+                            android:id="@+id/recycler_allSongs"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/txt_layout"
+                            android:layout_marginBottom="?attr/actionBarSize"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/white"
+                            android:scrollbars="none" />
+                    </RelativeLayout>
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/fab_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_play_black" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </in.risysnetworks.shplayer.observablelib.ObservableScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_header_background"
+            android:minHeight="?attr/actionBarSize" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:translationZ="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
