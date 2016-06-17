@@ -2,15 +2,19 @@
 SHPLayer is an Android music player prototype
 
 <div>
-    
-     <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152727.png" style="width: 33.33%; float: left;" alt="Image 1"/>
-     
-    
-    <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152757.png" style="width: 33.33%; float: left;" alt="Image 1"/>
-    
-    
-    <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152838.png" style="width: 33.33%; float: left;" alt="Image 1"/>
-    
+    <table>
+    <tr>
+    <td>
+     <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152727.png" alt="Image 1"/>
+    </td> 
+    <td>
+    <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152757.png" alt="Image 1"/>
+    </td>
+    <td>
+    <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152838.png" alt="Image 1"/>
+    </td>
+    </tr>
+    </table>
 </div>
 
 
