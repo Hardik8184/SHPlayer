@@ -1,6 +1,8 @@
 # SHPlayer
 SHPLayer is an Android music player prototype
 
+ <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152727.png" alt="Image 1"/>
+
 
 #License
 Copyright 2016 hardik8184@gmail.com Hardik Dungrani
