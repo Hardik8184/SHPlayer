@@ -2,13 +2,13 @@
 SHPLayer is an Android music player prototype
 
 <div style="width: 100%; overflow: hidden;">
-    <div style="width: 33%; float: left;"> 
+    <div style="width: 33.33%; float: left;"> 
      <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152727.png" alt="Image 1"/>
      </div>
-    <div style="width: 33%">
+    <div style="width: 33%; float: left;">
     <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152757.png" alt="Image 1"/>
     </div>
-    <div style="width: 33%">
+    <div style="width: 33%; float: left;">
     <img src="https://github.com/Hardik8184/SHPlayer/blob/master/device-2016-06-17-152838.png" alt="Image 1"/>
     </div>
 </div>
